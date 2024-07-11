@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Login form</title>
+  </head>
+  <body>
+    <div class="body">
+      <form class="form-boundry">
+        <div class="header">
+          <h1>Sign in</h1>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <hr class="header-bottom-line" />
+        <div class="two-boxes">
+            <!-- //box1 -->
+          <div class="box1">
+            <div class="input-box1">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="input-box2">
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <p class="forgot">
+              Forgot a password? <a href="">click here to retore</a>
+            </p>
+            <!-- //buttons section -->
+            <div class="buttons">
+              <div class="btn">
+                <button class="Login">Login</button>
+              </div>
+              <div class="checkboxes">
+                <label class="label" class="showpass" for="showPassword"
+                  >Show password
+                  <input type="checkbox"  id="showPassword" />
+                </label>
+                <br>
+                <label class="label-remember" for="readMe"
+                  >Remember me
+                  <input type="checkbox" class="input-remember"  id="readMe" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- //box2 -->
+          <div class="box2">
+            <p class="box2-firstpara">You can also login with your social account</p>
+            <div class="socials">
+                <div class="facebook"><i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/">Facebook</a></div>
+                <div class="twitter"><i class="fa-brands fa-square-twitter"></i><a href="https://www.twitter.com">Twitter</a></div>
+                <div class="google"><i class="fa-brands fa-google"></i><a href="https://www.google.com">Google</a></div>
+            </div>
+            <p class="openid">
+                Or use your OpenID to login
+            </p>
+            <div class="openid-input">
+                <input id="input" type="text" placeholder="Your OpenID" required >
+                <button class="GO">Go</button>
+            </div>
+            <p class=" last-para">You may need to disable popup blockers
+                <br>
+                to login with above site
+            </p>
+          </div>
+        </div>
+        <hr class="end-line" />
+          <!-- //last section -->
+            <div class="last">
+         <p class="last-line">Don't Registered? <a href="#">Register now!</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
